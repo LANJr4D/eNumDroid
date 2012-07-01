@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="menu_text_settings">Settings</string>
+	<string name="menu_text_bypass">Bypass ENUM</string>
+	<string name="app_description">ENUM Client Demo</string>
+	<string name="app_helptext">
+		This application adds ENUM (E.164
+		Number Mapping) support to your
+		Android phone.\n\nEach time you dial a full
+		international number (i.e. starting
+		with a \'+\') your phone will check
+		the DNS for	additional routing
+		information and offer you a list of
+		alternate contact methods.
+	</string>
+	<string name="app_label">ENUM</string>
+	<string name="app_strapline">Free Your Phone</string>
+	<string name="no_props">No ENUM results found</string>
+	<string name="toast_progress">ENUM lookup in progress</string>
+	<string name="toast_notfound">No ENUM results found</string>
+	<string name="toast_notsupported">No compatible program installed</string>
+	<string name="notify_enum_enabled">ENUM enabled</string>
+	<string name="notify_enum_disabled">ENUM disabled</string>
+	<string name="notify_enum_offline">ENUM offline</string>
+	<string name="notify_summary">Select to change ENUM settings</string>
+	<string name="pref_enum_enable">Enable ENUM</string>
+	<string name="pref_enum_mobile">Enable on UMTS/EDGE</string>
+	<string name="pref_enum_mobile_summary">Allow ENUM on 3G mobile networks</string>
+	<string name="pref_enum_use_custom">Use custom ENUM suffix</string>
+	<string name="pref_enum_use_custom_summary">Use an alternate DNS suffix</string>
+	<string name="pref_enum_custom_suffix">Custom DNS Suffix</string>
+	<string name="pref_enum_custom_suffix_summary">Specify an alternate for e164.arpa</string>
+</resources>

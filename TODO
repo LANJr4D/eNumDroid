@@ -1,0 +1,34 @@
+TODO List:
+
+- versioning / packaging
+- discover correct local DNS servers
+- check on NTN handling
+- populate dial history [nb: not possible due to current Android bug]
+
+DONE
+- pass-thru to original number option
+- control on Edge/3G connection
+  - update notification on 3G/EDGE pref setting change
+- more string internationalization
+- strip URI scheme from labels in some cases
+- icons next to the URIs
+- dial original number if no ENUM entries found
+- changing the DNS suffix
+- invoke selected URI on click
+- ignore non E2U NAPTRs
+- handle ENUM service type field
+  - split multiple services into individual NAPTRs
+
+Recognised ENUM services:
+
+  email:mailto
+  loc:geo
+  sip
+  sms:tel
+  vcard?
+  voice:tel
+  web:http
+  web:https
+  xmpp
+  
+

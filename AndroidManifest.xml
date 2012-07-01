@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="uk.nominet.android.phone"
+	android:versionName="0.9.1" android:versionCode="2">
+	<uses-sdk android:minSdkVersion="3" />
+	<application android:icon="@drawable/enumlogo"
+		android:label="@string/app_label" android:debuggable="false">
+		android:description="@string/app_description">
+		<activity android:name=".ENUMMain" android:label="@string/app_label" android:noHistory="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ENUMList" android:noHistory="true" />
+		<activity android:name=".ENUMPrefs" />
+		<receiver android:name=".ENUMReceiver" android:enabled="true">
+			<intent-filter android:priority="100">
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+				<action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+			</intent-filter>
+		</receiver>
+		<provider android:name=".ENUMProvider" android:authorities="enum"
+			android:multiprocess="true" />
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+</manifest> 
+

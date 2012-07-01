@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference android:key="enum_enable"
+		android:title="@string/pref_enum_enable" />
+
+	<CheckBoxPreference android:key="enum_mobile"
+		android:title="@string/pref_enum_mobile" android:summary="@string/pref_enum_mobile_summary"
+		android:defaultValue="false" android:dependency="enum_enable" />
+
+	<CheckBoxPreference android:key="enum_custom"
+		android:title="@string/pref_enum_use_custom" android:summary="@string/pref_enum_use_custom_summary"
+		android:defaultValue="false" />
+
+	<EditTextPreference android:key="enum_suffix"
+		android:title="@string/pref_enum_custom_suffix" android:summary="@string/pref_enum_custom_suffix_summary"
+		android:defaultValue="e164.arpa" android:dependency="enum_custom" />
+
+</PreferenceScreen>
